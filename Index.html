@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interfaz de Usuario</title>
+</head>
+<body>
+    <h1>Interfaz de Usuario</h1>
+    <form action="/submit" method="POST">
+        <label for="query">Consulta:</label>
+        <input type="text" id="query" name="query" required>
+        <button type="submit">Enviar</button>
+    </form>
+    <br>
+    {% if query %}
+    <p>Tu consulta: {{ query }}</p>
+    {% endif %}
+    {% if recognized_text %}
+    <p>Texto reconocido: {{ recognized_text }}</p>
+    {% endif %}
+    {% if response %}
+    <p>Respuesta: {{ response }}</p>
+    {% endif %}
+</body>
+</html>

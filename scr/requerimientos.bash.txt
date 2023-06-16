@@ -1,0 +1,3 @@
+pip install numpy torch==1.8.0 librosa unidecode inflect
+pip install git+https://github.com/NVIDIA/apex
+pip install git+https://github.com/NVIDIA/tacotron2
